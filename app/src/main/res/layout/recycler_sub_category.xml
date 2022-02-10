@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_110sdp"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_2sdp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp">
+
+        <ImageView
+            android:id="@+id/IconCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/iconStar1"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/icon_star" />
+
+            <ImageView
+                android:id="@+id/iconStar2"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_toRightOf="@+id/iconStar1"
+                android:src="@drawable/icon_star" />
+
+            <ImageView
+                android:id="@+id/iconStar3"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_toRightOf="@id/iconStar2"
+                android:src="@drawable/icon_star" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@drawable/bg_discount"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="3 km" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorgray"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tvOldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00/" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/bg_distance"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_2sdp"
+            android:text="10%/"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:id="@+id/tvNewPrice"
+        android:text="00.00/-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:id="@+id/tvProductService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Service"/>
+    <TextView
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:id="@+id/tvTitleProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title Product"/>
+
+</LinearLayout>
